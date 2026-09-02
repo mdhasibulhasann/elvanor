@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Verdant — Green Woody | ELVANOR</title>
+<meta name="description" content="Verdant by ELVANOR — The calm of wild green. Fresh green notes settle into textured woods, creating a modern fragrance with clarity, depth, and character." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-product="verdant">
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="index.html">ELVANOR</a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="main-nav__links">
+        <li><a href="index.html#collection">Collection</a></li>
+        <li><a href="index.html#story">Our Story</a></li>
+      </ul>
+      <a class="cart-link" href="cart.html" aria-label="View cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 12.4A2 2 0 0 0 9.4 18h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/></svg>
+        <span class="cart-badge" data-cart-badge>0</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="product-page">
+  <div class="container product-page__inner">
+    <div class="product-page__grid">
+
+      <div class="gallery">
+        <div class="gallery__frame" data-gallery-frame></div>
+        <button type="button" class="gallery__arrow gallery__arrow--prev" data-gallery-prev aria-label="Previous image">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <button type="button" class="gallery__arrow gallery__arrow--next" data-gallery-next aria-label="Next image">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+        <div class="gallery__dots" data-gallery-dots></div>
+      </div>
+
+      <div class="product-info">
+        <span class="product-info__family" data-p-family></span>
+        <h1 class="product-info__name" data-p-name></h1>
+        <p class="product-info__subtitle" data-p-subtitle></p>
+
+        <div class="product-info__price-row">
+          <span class="product-info__price" data-p-price></span>
+          <span class="product-info__size" data-p-size></span>
+        </div>
+
+        <p class="product-info__desc" data-p-desc></p>
+
+        <div class="product-info__notes">
+          <div>
+            <div class="product-info__note-label">Opening</div>
+            <div class="product-info__note-value" data-p-opening></div>
+          </div>
+          <div>
+            <div class="product-info__note-label">Heart</div>
+            <div class="product-info__note-value" data-p-heart></div>
+          </div>
+          <div>
+            <div class="product-info__note-label">Base</div>
+            <div class="product-info__note-value" data-p-base></div>
+          </div>
+        </div>
+
+        <div class="product-info__actions">
+          <button type="button" class="btn btn-outline" data-add-to-cart>Add to Cart</button>
+          <button type="button" class="btn btn-gold" data-buy-now>Buy Now</button>
+        </div>
+        <p class="product-info__delivery">Complimentary delivery within Dhaka. Final contact and payment details are confirmed before dispatch.</p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span class="wordmark">ELVANOR</span>
+  <p class="site-footer__motto">The Art of Presence.</p>
+  <p class="site-footer__copy">© 2026 ELVANOR Fine Fragrances</p>
+</footer>
+
+<div class="modal-overlay" data-cart-modal role="dialog" aria-modal="true" aria-labelledby="cart-modal-title">
+  <div class="modal">
+    <button type="button" class="modal__close" data-modal-close aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal__mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+    </div>
+    <img class="modal__image" data-modal-image src="" alt="" />
+    <p class="modal__eyebrow">Added to Your Cart</p>
+    <h2 class="modal__title" id="cart-modal-title" data-modal-name></h2>
+    <div class="modal__actions">
+      <button type="button" class="btn btn-gold btn-block" data-modal-goto-cart>Go to Cart</button>
+      <button type="button" class="btn btn-outline btn-block" data-modal-buy-more>Buy More</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Your Cart | ELVANOR</title>
+<meta name="description" content="Review your ELVANOR fragrance selection before requesting your order." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="index.html">ELVANOR</a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="main-nav__links">
+        <li><a href="index.html#collection">Collection</a></li>
+        <li><a href="index.html#story">Our Story</a></li>
+      </ul>
+      <a class="cart-link" href="cart.html" aria-label="View cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 12.4A2 2 0 0 0 9.4 18h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/></svg>
+        <span class="cart-badge" data-cart-badge>0</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="cart-page" data-cart-page>
+  <div class="container">
+    <h1 class="cart-page__title">Your Cart</h1>
+
+    <div class="cart-empty" data-cart-empty style="display:none;">
+      <p class="cart-empty__title">Your cart is waiting.</p>
+      <p class="cart-empty__sub">Fragrances chosen with care take a moment to find. Browse the collection to begin.</p>
+      <a class="btn btn-gold" href="index.html#collection">Explore Collection</a>
+    </div>
+
+    <div class="cart-grid" data-cart-filled style="display:none;">
+      <div class="cart-items" data-cart-items></div>
+
+      <aside class="order-summary">
+        <h2 class="order-summary__title">Order Summary</h2>
+        <div class="order-summary__row">
+          <span>Subtotal</span>
+          <span data-summary-subtotal>৳ 0</span>
+        </div>
+        <div class="order-summary__row">
+          <span>Delivery</span>
+          <span>Complimentary</span>
+        </div>
+        <div class="order-summary__row order-summary__row--total">
+          <span>Total</span>
+          <span data-summary-total>৳ 0</span>
+        </div>
+        <button type="button" class="btn btn-gold btn-block order-summary__btn" data-place-order>Place Order</button>
+        <p class="order-summary__note">This is a front-end demonstration. Final contact and payment details will be confirmed with you before dispatch.</p>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span class="wordmark">ELVANOR</span>
+  <p class="site-footer__motto">The Art of Presence.</p>
+  <p class="site-footer__copy">© 2026 ELVANOR Fine Fragrances</p>
+</footer>
+
+<div class="modal-overlay" data-order-modal role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+  <div class="modal">
+    <div class="modal__mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+    </div>
+    <p class="modal__eyebrow">Order Request Received</p>
+    <h2 class="modal__title" id="order-modal-title">Thank you.</h2>
+    <p class="modal__body">Your selected fragrances have been reserved on this device. This is a front-end demonstration — a real payment and fulfilment system can be connected to this flow later.</p>
+    <div class="modal__actions">
+      <button type="button" class="btn btn-gold btn-block" data-order-modal-continue>Continue</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

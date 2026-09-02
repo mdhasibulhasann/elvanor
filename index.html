@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>ELVANOR — Fine Fragrances | The Art of Presence</title>
+<meta name="description" content="ELVANOR is a fine-fragrance house from Dhaka. Discover Nocturne, Aurelis and Verdant — three fragrances built on restraint, depth and presence." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="index.html">ELVANOR</a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="main-nav__links">
+        <li><a href="index.html#collection">Collection</a></li>
+        <li><a href="index.html#story">Our Story</a></li>
+      </ul>
+      <a class="cart-link" href="cart.html" aria-label="View cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 12.4A2 2 0 0 0 9.4 18h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/></svg>
+        <span class="cart-badge" data-cart-badge>0</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__particles" data-particles></div>
+      <div class="hero__scent-lines" data-scent-lines></div>
+      <div class="hero__glow"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__brand">
+        <span class="hero__kicker">Fine Fragrances · Dhaka</span>
+        <h1 class="hero__logo">ELVANOR</h1>
+        <p class="hero__motto">The Art of Presence.</p>
+
+        <div class="hero__social">
+          <span class="hero__social-label">Find us on</span>
+          <div class="hero__social-icons">
+            <a class="social-icon" data-social="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="ELVANOR on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 8h-2a2 2 0 0 0-2 2v3H9v3h2v6h3v-6h2.2l.8-3H14v-2.4c0-.6.2-1.1 1.1-1.1H16V8z"/></svg>
+            </a>
+            <a class="social-icon" data-social="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="ELVANOR on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.6" cy="7.4" r="0.6" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__art">
+        <div class="hero__bottles" data-hero-bottles aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#collection" aria-label="Scroll to collection">
+      <span>Discover</span>
+      <span class="hero__scroll-circle">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 14l6 6 6-6"/></svg>
+      </span>
+    </a>
+  </section>
+
+  <section id="collection" class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">The Collection</span>
+        <h2>Three fragrances, one restrained language.</h2>
+      </div>
+      <div data-product-collection></div>
+    </div>
+  </section>
+
+  <section id="story" class="section story">
+    <div class="container story__inner">
+      <span class="eyebrow">Our Story</span>
+      <h2 class="story__heading">A scent is not an accessory.<br />It is an <em>arrival</em>.</h2>
+      <p class="story__body">ELVANOR was built on a simple belief: that a fragrance should feel considered, not loud. Every composition is built through an opening, a heart, and a lasting trail — rare-feeling accords balanced with contemporary restraint, so presence is felt long after the room has been entered.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span class="wordmark">ELVANOR</span>
+  <p class="site-footer__motto">The Art of Presence.</p>
+  <p class="site-footer__copy">© 2026 ELVANOR Fine Fragrances</p>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
